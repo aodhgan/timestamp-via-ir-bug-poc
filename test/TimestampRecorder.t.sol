@@ -11,7 +11,7 @@ contract TimestampRecorderTest is Test {
         timestampRecorder = new TimestampRecorder();
     }
 
-    function test_Increment() public {
+    function test_Record() public {
         uint64 time1 = uint64(block.timestamp);
         timestampRecorder.record();
 
